@@ -1,26 +1,64 @@
-Smart Student Attendance - Eclipse Dynamic Web Project (Non-Maven)
+Smart Student Attendance Management System
 
-This archive contains two ready-to-import Eclipse Dynamic Web Projects:
-- smart-attendance-tomcat9  (uses javax.servlet.*)  -> for Tomcat 9 / Java EE
-- smart-attendance-tomcat10 (uses jakarta.servlet.*) -> for Tomcat 10+ / Jakarta EE
+A secure and scalable web-based attendance management system built using Java, JSP/Servlets, MySQL, HTML, CSS, and JavaScript.
+The system enables student record management, attendance tracking, and report generation with a clean relational database design.
 
-Import into Eclipse:
-1. In Eclipse: File -> Import -> General -> Existing Projects into Workspace
-2. Select root directory: the folder for the project (e.g., smart-attendance-tomcat9)
-3. Make sure your server runtime is configured:
-   - For tomcat9 project, add Apache Tomcat v9 runtime.
-   - For tomcat10 project, add Apache Tomcat v10 runtime.
-4. Right-click project -> Run As -> Run on Server.
+⭐ Features
+🔐 Role-Based Access
 
-Notes:
-- Edit WebContent/WEB-INF/config.properties to set your DB URL, user, password.
-- Run the SQL script at db/schema.sql to create the DB and sample data.
-- Default admin credentials: admin / admin123
+Admin login for managing students and viewing attendance.
 
-Git commands to push to a new GitHub repo (replace <your-repo-url>):
-  git init
-  git add .
-  git commit -m "Initial commit - Smart Student Attendance (Eclipse Dynamic Web Project)"
-  git branch -M main
-  git remote add origin <your-repo-url>
-  git push -u origin main
+📚 Student Management
+
+Add, view, and manage student details.
+
+Department-based grouping and filtering.
+
+📝 Attendance Tracking
+
+Mark daily attendance for each student.
+
+View attendance records by date.
+
+Simple tabular and filter-based reporting.
+
+📊 Report Generation
+
+Daily attendance view.
+
+Expandable to monthly and custom reports.
+
+🏗️ Scalable Design
+
+The project is designed with future enhancements in mind, such as:
+
+Biometric device integration (fingerprint/RFID).
+
+Low-attendance alerts via email/SMS.
+
+REST API support for mobile and external systems.
+
+Dashboard analytics for Admin.
+
+| Layer        | Technology                       |
+| ------------ | -------------------------------- |
+| Frontend     | HTML, CSS, Bootstrap, JavaScript |
+| Backend      | Java, JSP/Servlets               |
+| Database     | MySQL                            |
+| Server       | Apache Tomcat (v9 or v10)        |
+| Architecture | MVC + DAO Pattern                |
+
+
+
+
+🚀 Future Enhancements
+
+Biometric attendance integration
+
+QR code scanner for marking attendance
+
+REST APIs for mobile apps
+
+Automated attendance analytics
+
+Notification alerts for low attendance
